@@ -24,7 +24,7 @@ SECRET_KEY = '*_7wobhdidr2ay=p=sqj%l5la00+kl6^^^*xo_&n3khcri$e$s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://hailuj.azurewebsites.net']
+ALLOWED_HOSTS = ['https://eastustext.azurewebsites.net']
 
 
 # Application definition
