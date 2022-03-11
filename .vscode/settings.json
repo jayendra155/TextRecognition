@@ -1,4 +1,4 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/52f6a474-4f03-4ebb-a92e-0db11fca5986/resourceGroups/CV/providers/Microsoft.Web/sites/futurereadytalent",
-    "appService.deploySubpath": "."
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/52f6a474-4f03-4ebb-a92e-0db11fca5986/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/hailuj"
 }
