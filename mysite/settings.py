@@ -25,7 +25,7 @@ SECRET_KEY = '*_7wobhdidr2ay=p=sqj%l5la00+kl6^^^*xo_&n3khcri$e$s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = false
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['10.0.0.4']
 
 
 # Application definition
@@ -121,4 +121,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-STATIC_ROOT = BASE_DIR / 'staticfiles'

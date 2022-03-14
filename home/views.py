@@ -17,9 +17,9 @@ def imgurl(request):
         url = request.POST['imgurl']
         import requests
 
-        subscription_key = "b3903e35cfd84dc68bdc1d1146f75466"
+        subscription_key = "1b212f3c90e84a5e9e0bd0ff2c4b8a07"
 
-        endpoint = "https://textread.cognitiveservices.azure.com/"
+        endpoint = "https://cvv8896.cognitiveservices.azure.com/"
 
         ocr_url = endpoint + "vision/v3.1/ocr"
 
@@ -54,9 +54,9 @@ def imgurl(request):
         import requests
 
         # Add your Computer Vision subscription key and endpoint to your environment variables.
-        subscription_key = "b3903e35cfd84dc68bdc1d1146f75466"
+        subscription_key = "1b212f3c90e84a5e9e0bd0ff2c4b8a07"
 
-        endpoint = "https://textread.cognitiveservices.azure.com/"
+        endpoint = "https://cvv8896.cognitiveservices.azure.com/"
 
         ocr_url = endpoint + "vision/v3.1/ocr"
 
@@ -93,7 +93,7 @@ def imgurl(request):
 def readtext(request):
     if request.method == 'POST':
         text = request.POST['strtext']
-        speech_key, service_region = "88dca688e34b4b1e8e5aae78374f0223", "eastus"
+        speech_key, service_region = "78ac09e489694715b5007a294189ef10", "CentralUS"
         speech_config = speechsdk.SpeechConfig(
             subscription=speech_key, region=service_region)
 
