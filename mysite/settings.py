@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 from django.conf.global_settings import STATICFILES_STORAGE
+from sqlalchemy import false
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*_7wobhdidr2ay=p=sqj%l5la00+kl6^^^*xo_&n3khcri$e$s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = false
 
-ALLOWED_HOSTS = ['https://eastustext.azurewebsites.net']
+ALLOWED_HOSTS = ['']
 
 
 # Application definition
