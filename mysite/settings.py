@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from django.conf import settings
 
 from django.conf.global_settings import STATICFILES_STORAGE
 from sqlalchemy import false
@@ -120,4 +121,5 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+STATIC_ROOT = "/mysite/static"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
