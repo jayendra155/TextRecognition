@@ -26,7 +26,7 @@ SECRET_KEY = '*_7wobhdidr2ay=p=sqj%l5la00+kl6^^^*xo_&n3khcri$e$s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = false
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://uniqueapi.azurewebsites.net']
 
 
 # Application definition
