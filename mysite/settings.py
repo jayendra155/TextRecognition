@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "whitenoise.runserver_nostatic",
 ]
 
 MIDDLEWARE = [
@@ -119,7 +120,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-
-STATIC_URL = '/static/'
-STATIC_ROOT = "/mysite/static"
+STATIC_URL = os.environ.get("DJANGO_STATIC_URL", "/templates/index.html/")
+STATIC_ROOT = os.environ.get("DJANGO_STATIC_ROOT", "/templates/index.html/") 
+#STATIC_URL = '/static/'
+#STATIC_ROOT = "/mysite/static"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
